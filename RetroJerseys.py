@@ -1,0 +1,32 @@
+print("Welcome to retro football jerseys!")
+print("Relive the glory days with our classic jersey collection!")
+print("Choose your favorite retro jersey and wear the history!")
+print("Let's get started with your order!")
+user = input("Enter your retro jersey name: ")
+print("You have selected the retro jersey of", user)
+size = input("Enter your retro jersey size (S, M, L, XL): ")
+print("You have selected size", size)
+print("Proceeding to checkout...")
+email = input("Enter your email: ")
+address = input("Enter your address: ")
+print("Your retro jersey priced at $89.99 will be delivered to", address)
+print("Calculating your bill...")
+print("$200")
+print("price = 180 + 20 (delivery charges)")
+print("Enter your coupon code for discount")
+coupon = input("Enter coupon code: ")
+if coupon == "RETRO10":
+    print("Coupon applied! You get a 10% discount.")
+    final_price = 200 - (200 * 0.10)
+    print("Your final price is: $", final_price)
+elif coupon == "JERSEY20":
+    print("Coupon applied! You get a 20% discount.")
+    final_price = 200 - (200 * 0.20)
+    print("Your final price is: $", final_price)
+elif coupon == "VINTAGE15":
+    print("Coupon applied! You get a $15 discount.")
+    final_price = 200 - 15
+    print("Your final price is: $", final_price)
+else:
+    print("Invalid coupon code. No discount applied.")
+    print("Your final price is: $200")
