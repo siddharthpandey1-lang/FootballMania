@@ -1,0 +1,30 @@
+User = input("Enter your jersey name: ")
+print("You have selected the jersey of", User)
+Size = input("Enter your jersey size (S, M, L, XL): ")
+print("You have selected size", Size)
+print("checkout")
+print("Enter Your email and address for delivery")
+Email = input("Enter your email: ")
+Address = input("Enter your address: ")
+print("Your jersey priced at $79.99 will be delivered to", Address)
+print("bill")
+print("$190")
+print("price = 170 + 20 (delivery charges)")
+print("enter your copon code for discount")
+Coupon = input("Enter coupon code: ")
+if Coupon == "FOOTBALL10":
+    print("Coupon applied! You get a 10% discount.")
+    final_price = 190 - (190 * 0.10)
+    print("Your final price is: $", final_price)
+elif Coupon == "JERSEY15":
+    print("Coupon applied! You get a 15% discount.")
+    final_price = 190 - (190 * 0.15)
+    print("Your final price is: $", final_price)
+elif Coupon == "GET10OFF":
+    print("Coupon applied! You get a $10 discount.")
+    final_price = 190 - 10
+    print("Your final price is: $", final_price)
+else:
+    print("Invalid coupon code. No discount applied.")
+    print("Your final price is: $190")
+print("Thank you for shopping with us!")
